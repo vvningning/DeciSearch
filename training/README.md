@@ -5,7 +5,7 @@ This directory contains LLaMA-Factory dataset descriptors and LoRA config templa
 1. **Workflow SFT**: imitate high-quality DeciSearch teacher trajectories at the controller, worker, verifier, and finalizer turns.
 2. **Exact-State DPO**: compare alternative next responses under the same rendered workflow state.
 
-The configs target Qwen3-4B by default. For DS-30B-style runs, change `model_name_or_path`, output directories, and distributed-training launcher settings.
+The configs target Qwen3-4B by default. The SFT template uses `learning_rate: 1.0e-5`, which is conservative for preserving tool-call format and reasoning structure before DPO. For DS-30B-style runs, change `model_name_or_path`, output directories, and distributed-training launcher settings.
 
 ## 1. Prepare LLaMA-Factory
 

@@ -182,6 +182,8 @@ cd ../LLaMA-Factory
 llamafactory-cli train ../DeciSearch-pub/training/qwen3_lora_sft_decisearch.yaml
 ```
 
+The SFT template uses `learning_rate: 1.0e-5`; this is intentionally conservative for tool-call format preservation.
+
 ### Exact-State DPO
 
 Exact-State DPO compares alternative next responses under the same rendered workflow state. First extract replayable state prompts from an SFT-policy run:
