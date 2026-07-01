@@ -23,8 +23,8 @@ from decisearch.types import EvidenceBoard, EvidenceItem, clean_text, normalize_
 
 @dataclass
 class DeciSearchConfig:
-    controller_steps: int = 6
-    worker_tool_turns: int = 4
+    controller_steps: int = 5
+    worker_tool_turns: int = 3
     max_workers_per_step: int = 2
     max_tool_calls_per_round: int = 4
     max_tool_workers: int = 4

@@ -137,6 +137,8 @@ Prepare a benchmark JSONL in the schema above, then use the same three-stage pip
 
 For datasets with `owner/repo` layouts, pass `--repo-path-mode full`. For legacy flat layouts, use the default `basename` mode.
 
+The default inference budget is intentionally modest: 5 controller steps, 3 worker tool turns per worker, and up to 2 workers per controller step. Increase `--tool_turns` or `--worker_tool_turns` for teacher-data generation or high-recall ablations.
+
 ## Training with LLaMA-Factory
 
 DeciSearch uses [LLaMA-Factory](https://github.com/hiyouga/LLaMA-Factory) for both workflow SFT and DPO training. The training files live in `training/`:
