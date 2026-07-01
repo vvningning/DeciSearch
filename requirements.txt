@@ -1,0 +1,6 @@
+openai>=1.0.0
+httpx>=0.24.0
+numpy>=1.24.0
+tqdm>=4.65.0
+jsonlines>=4.0.0
+datasets>=2.18.0

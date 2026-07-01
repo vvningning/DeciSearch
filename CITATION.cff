@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+title: "DeciSearch: A Decision-Trained Dynamic Evidence Workflow for Repository-Level Code Localization"
+authors:
+  - name: Anonymous Author(s)
+year: 2026
+message: "If you use DeciSearch, please cite the paper."

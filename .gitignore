@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Runtime artifacts
+output/
+logs/
+runs/
+repos/
+repos_*/
+worktree/
+worktree_*/
+
+# Large/generated data
+/data/*.jsonl
+/data/*.json
+/data/sft/
+/data/sft_sources/
+!/data/samples/
+!/data/samples/*.jsonl
+
+# Local credentials/config
+.env
+*.env
+
+# OS/editor
+.DS_Store
+.vscode/
+.idea/
