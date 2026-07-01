@@ -1,0 +1,23 @@
+{
+  "decisearch_sft": {
+    "file_name": "decisearch_sft.jsonl",
+    "formatting": "sharegpt",
+    "columns": {
+      "messages": "conversations",
+      "system": "system",
+      "tools": "tools"
+    }
+  },
+  "decisearch_exact_state_dpo": {
+    "file_name": "decisearch_exact_state_dpo.jsonl",
+    "formatting": "sharegpt",
+    "ranking": true,
+    "columns": {
+      "messages": "conversations",
+      "chosen": "chosen",
+      "rejected": "rejected",
+      "system": "system",
+      "tools": "tools"
+    }
+  }
+}
